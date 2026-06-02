@@ -10,7 +10,8 @@ Proyek ini bertujuan untuk menganalisis dan mengelompokkan (melakukan klastering
 - **Normalisasi Data**: Menggunakan standardisasi (`StandardScaler`) untuk menyamakan skala data sebelum proses klastering agar algoritma berjalan optimal.
 - **Klastering dengan K-Means**: Mengelompokkan data siswa menjadi 3 klaster berbeda menggunakan metrik jarak Euclidean.
 - **Interpretasi Centroid**: Proses denormalisasi centroid kembali ke skala nilai asli (0-100) untuk mempermudah interpretasi karakteristik akademik tiap kelompok siswa.
-- **Visualisasi 3D Interaktif**: Visualisasi sebaran klaster dan titik pusat klaster (centroid) menggunakan grafik scatter 3 dimensi dari Matplotlib.
+- **Visualisasi 3D**: Visualisasi sebaran klaster dan titik pusat klaster (centroid) dalam ruang vektor $R^3$ menggunakan grafik scatter 3 dimensi dari Matplotlib.
+- **Visualisasi Perbandingan Performa**: Visualisasi diagram batang berkelompok (grouped bar chart) dari Matplotlib untuk membandingkan performa akademik rata-rata (nilai matematika, membaca, dan menulis) antar klaster dengan jelas.
 
 ---
 
@@ -73,7 +74,8 @@ Proyek_Aljali/
      - **Klaster 0**: Siswa dengan performa akademik rata-rata/menengah (Centroid: Math ~65, Reading ~68, Writing ~68).
      - **Klaster 1**: Siswa yang memerlukan bimbingan lebih/performa akademik rendah (Centroid: Math ~48, Reading ~51, Writing ~48).
      - **Klaster 2**: Siswa berprestasi tinggi/performa akademik tinggi (Centroid: Math ~82, Reading ~85, Writing ~84).
-   - **Visualisasi**: Menampilkan grafik scatter 3D untuk melihat sebaran klaster siswa beserta centroid-nya (ditandai dengan huruf `X` merah).
+   - **Visualisasi 3D**: Menampilkan grafik scatter 3D untuk melihat sebaran klaster siswa beserta centroid-nya (ditandai dengan huruf `X` merah) dalam ruang vektor $R^3$.
+   - **Visualisasi Perbandingan Nilai**: Menampilkan grafik batang berkelompok (grouped bar chart) untuk membandingkan rata-rata nilai ujian (Math, Reading, Writing) per klaster, lengkap dengan label nilai numerik di atas setiap batang.
 
 ---
 
